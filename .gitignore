@@ -1,0 +1,45 @@
+# dependências
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# testes
+frontend/coverage/
+
+# next.js
+frontend/.next/
+frontend/out/
+
+# produção
+frontend/build/
+
+# arquivos gerais
+.DS_Store
+*.pem
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# variáveis de ambiente
+frontend/.env*
+
+# vercel
+frontend/.vercel/
+
+# typescript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# mídia pesada
+*.mp4
+*.mov
+*.avi
+*.mkv
