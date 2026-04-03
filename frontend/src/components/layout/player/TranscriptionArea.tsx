@@ -1,4 +1,12 @@
+import { Inconsolata } from "next/font/google";
 import React, { useEffect, useRef, useState } from 'react';
+
+
+const inconsolata = Inconsolata({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 
 interface TranscriptionAreaProps {
   targetSentence: string;
@@ -89,7 +97,7 @@ export function TranscriptionArea({
         onBlur={() => setIsFocused(false)}
         className="w-full min-h-[100px] flex items-center justify-center px-12 py-8 cursor-text focus:outline-none bg-[var(--color-bg-primary)]"
       >
-        <div className="text-3xl tracking-wide leading-relaxed text-center font-light select-none">
+        <div className={`${inconsolata.className} text-3xl tracking-wide leading-relaxed text-center font-light select-none whitespace-pre-wrap`}>
           {renderCharacters()}
         </div>
       </div>

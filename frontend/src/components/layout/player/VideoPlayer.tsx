@@ -8,7 +8,7 @@ interface VideoPlayerProps {
 export const VideoPlayer = forwardRef<HTMLVideoElement, VideoPlayerProps>(
   ({ videoUrl, onReplay }, ref) => {
     return (
-      <div className="relative w-full aspect-video overflow-hidden"
+      <div className="relative w-full max-w-3xl aspect-video overflow-hidden mx-auto"
         style={{ 
           backgroundColor: 'rgba(37, 26, 51, 0.6)',
           clipPath: 'polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)',

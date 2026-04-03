@@ -17,7 +17,7 @@ export function TopNavigation({ onToggleStats }: TopNavigationProps) {
             <span className="text-[var(--color-bg-primary)] font-bold text-xl">L</span>
           </div>
           <h1 className="text-[var(--color-text-primary)] tracking-[0.15em]">
-            LISTENING LAB
+            ThougHTWord
           </h1>
         </div>
         
